@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "fir-vgexplorer",
+    "austin-firebase-api": "fir-vgexplorer"
+  }
+}

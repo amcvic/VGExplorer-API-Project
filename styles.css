@@ -1,0 +1,105 @@
+body {
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  background: linear-gradient( rgba(18, 27, 44, 0.1), rgba(18, 27, 44, 0.9) ), url('assets/nescontrollers.jpeg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.front {
+  font-size: 4vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.front p {
+  text-align: center;
+}
+
+.startButton {
+  font-family: 'Josefin Sans', sans-serif;
+  display: flex;
+  font-size: 3vw;
+  background-color: darkorchid;
+  text-align: center;
+  display: inline-block;
+  border-radius: 12px;
+  padding: 10px 50px 10px 50px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+.startButton:hover {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 3vw;
+  padding: 10px 50px 10px 50px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 12px;
+  background-color: white;
+}
+
+.platformContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.platformContainer div {
+  background-color: white;
+  width: 30%;
+  border: 2px solid black;
+  margin: 5px;
+  padding: 5px;
+}
+
+.platformContainer div img {
+  width: 100%;
+}
+
+.platformContainer p {
+  font-size: 1.4vw;
+  color: black;
+}
+
+.platformContainer h2 {
+  font-size: 2vw;
+  color: black;
+}
+
+.gameContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.gameContainer div {
+  background-color: white;
+  width: 20%;
+  border: 2px solid black;
+  margin: 5px;
+  padding: 5px;
+}
+
+.gameContainer div img {
+  width: 100%;
+}
+
+.gameContainer p {
+  font-size: 1.4vw;
+  color: black;
+}
+
+.gameContainer h2 {
+  font-size: 2vw;
+  color: black;
+}

@@ -6,7 +6,9 @@
 //  4. center elements in div vertically maybe (compensate for when no blurb)
 //  5. only display elements upon images loaded
 
-//  6. animations are broken on full screen sometimes (???)
+//  6. mobile query so videos open in new tab!
+
+//  7. animations are broken on full screen sometimes (???)
 
 // imagesLoaded('.platformContainer', function() {
   //originally set all divs containing games/platforms = display none
@@ -71,7 +73,11 @@ function fetchYtVid(query) {
       return result.json();
     }).then(function(json) {
       var win = window.open(ytWatch + json.items[0].id.videoId, '_blank');
-      win.focus();
+      if (win) {
+        win.focus();
+      } else {
+        alert('Please allow pop-ups in your browser to see gameplay videos!');
+      }
     }).catch(error => {console.error(error); console.log('No youtube videos found :-(');});
 }
 

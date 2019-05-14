@@ -73,11 +73,7 @@ function fetchYtVid(query) {
       return result.json();
     }).then(function(json) {
       var win = window.open(ytWatch + json.items[0].id.videoId, '_blank');
-      if (win) {
-        win.focus();
-      } else {
-        alert('Please allow pop-ups in your browser to see gameplay videos!');
-      }
+      win.focus();
     }).catch(error => {console.error(error); console.log('No youtube videos found :-(');});
 }
 
